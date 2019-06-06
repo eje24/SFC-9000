@@ -1,0 +1,36 @@
+BUGS:
+
+
+GENERAL TO DO:
+-Handle pawn conversion to other piece at rank 8
+    -Manually add to pawn getMove function
+-Handly AI behavior near endgame (could be that the evaluation function no longer works due to not being allowed to capture King)
+--> Make it so that the AI does not care about check
+-Add in thing that says whose turn it is
+-Add in option for different color themes
+-Add in information button (to display information)
+-Resolve bug where it waits for the computer to move to update the icon for the players move
+-Handle null pointer exception when no game state has yet been selected
+-Fix bug that terminates move search when break is discovered
+    -Add boolean checktesting
+
+If time permits:
+-Add En Passant
+-Add castling
+
+GUI Setup
+-Constructor for table merely adds chess board and menu
+-Clicking New PvP Game runs instantiateNewPvPGame()
+-Clicking New Computer Game runs instantiateNewComputerGame()
+-Both methods call assign chess pieces
+-For PvP
+    -Keep click counter (0,1,2,3) mod 4
+        -0=Start/White
+        -1=End/White
+        -2=Start/Black
+        -3=End/Black
+    -Only increment if click is successful
+    -Have undo button that undos the previous player's move
+        -If undo button is pressed, pop top move off of the stack and undo it
+    -Refresh GUI
+-New game variable
