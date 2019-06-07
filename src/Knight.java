@@ -50,9 +50,9 @@ public class Knight extends Piece {
     public double getValue() {return 30;}
     public ImageIcon getImageIcon(){
         if(this.getTeam())
-            return new ImageIcon("/Users/Ezra/IdeaProjects/Super Fantastic Chess 9000/src/images/whiteKnight.png");
+            return new ImageIcon("./src/images/whiteKnight.png");
         else
-            return new ImageIcon("/Users/Ezra/IdeaProjects/Super Fantastic Chess 9000/src/images/blackKnight.png");
+            return new ImageIcon("./src/images/blackKnight.png");
     }
     public int getEvalID(){
         return 4;

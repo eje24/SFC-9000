@@ -48,9 +48,9 @@ public class Bishop extends Piece {
     public double getValue() { return 30;}
     public ImageIcon getImageIcon(){
         if(this.getTeam())
-            return new ImageIcon("/Users/Ezra/IdeaProjects/Super Fantastic Chess 9000/src/images/whiteBishop.png");
+            return new ImageIcon("./src/images/whiteBishop.png");
         else
-            return new ImageIcon("/Users/Ezra/IdeaProjects/Super Fantastic Chess 9000/src/images/blackBishop.png");
+            return new ImageIcon("./src/images/blackBishop.png");
     }
     public int getEvalID(){
         return 3;

@@ -54,9 +54,9 @@ public class King extends Piece{
     public double getValue() {return 9000;}
     public ImageIcon getImageIcon(){
         if(this.getTeam())
-            return new ImageIcon("/Users/Ezra/IdeaProjects/Super Fantastic Chess 9000/src/images/whiteKing.png");
+            return new ImageIcon("./src/images/whiteKing.png");
         else
-            return new ImageIcon("/Users/Ezra/IdeaProjects/Super Fantastic Chess 9000/src/images/blackKing.png");
+            return new ImageIcon("./src/images/blackKing.png");
     }
     public int getEvalID(){
         return 0;
