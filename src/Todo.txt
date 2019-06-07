@@ -11,6 +11,7 @@ GENERAL TO DO:
 -Add in information button (to display information)
 -Resolve bug where it waits for the computer to move to update the icon for the players move
 -Handle null pointer exception when no game state has yet been selected
+-Add in stalemate
 -Fix bug that terminates move search when break is discovered
     -Add boolean checktesting
 

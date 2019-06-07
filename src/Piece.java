@@ -111,7 +111,6 @@ public abstract class Piece {
     }
     public abstract ArrayList<GameMove> findNextMoves(int fromX, int fromY, Board game_board, boolean ignoreCheck);
     public void printMoveMap(int fromX, int fromY, Board game_board){
-        System.out.println("Possible moves for selected piece: ");
         for(GameMove gm: this.findNextMoves(fromX,fromY,game_board,false)){
             System.out.println((char)(gm.getToX()+65)+""+(char)(gm.getToY()+49));
         }

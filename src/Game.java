@@ -81,14 +81,14 @@ public class Game {
     }
 
     public void makeMove(){
-        printCurrentMove();
-        getGame_board().print_board();
+        //printCurrentMove();
+        //getGame_board().print_board();
         getGame_board().getPiece(fromX,fromY).setMoved();
         getGame_board().makeMove(fromX,fromY,toX,toY);
     }
 
     public void printCurrentMove(){
-        System.out.println("Current selected move: " + fromX+" "+fromY + " " + toX + " " + toY);
+        //System.out.println("Current selected move: " + fromX+" "+fromY + " " + toX + " " + toY);
     }
 
 

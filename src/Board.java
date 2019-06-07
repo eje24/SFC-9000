@@ -189,8 +189,6 @@ public class Board {
     }
     public boolean inCheck(boolean team){
         //find King's position
-        System.out.println("Checking below board for team: " +team);
-        this.print_board();
         int toX=0,toY=0;
         boolean found=false;
         for(int i=0;i<8;i++){
@@ -204,17 +202,14 @@ public class Board {
             if(found)
                 break;
             if(i==7) {
-                System.out.println("King not found!!");
                 return false;
             }
         }
-        System.out.println("Found King at: " + toX + " " + toY);
         //search all other pieces
         for(int i=0;i<8;i++){
             for(int j=0;j<8;j++){
                 if(getPiece(i,j)!=null&&getPiece(i,j).getTeam()!=team){
                     if(getPiece(i,j).isValid(i,j,toX,toY,this,false)){
-                        System.out.println("Check found: " + i + " " + j);
                         return true;
                     }
                 }

@@ -38,8 +38,6 @@ public abstract class Player {
     }
     //same team is whether getting moves for this team or the other team (point is that it is hard to access the opposite player if only given a reference to one player in computerplayer.java)
     public ArrayList<GameMove> getMoves(Board game_board,boolean sameTeam, boolean checkTest, boolean ignoreCheck){
-        if(checkTest)
-            System.out.println("Checking getMoves for potentialcheckmate!");
         ArrayList<GameMove> moveList=new ArrayList<GameMove>();
         for(int x=0;x<8;x++){
             for(int y=0;y<8;y++){
@@ -55,7 +53,6 @@ public abstract class Player {
                         moveList.add(gm);
                 }
                 if(checkTest&&moveList.size()>0) {
-                    System.out.println("Found a move, returning checklist!");
                     return moveList;
                 }
             }
