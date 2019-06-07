@@ -1,0 +1,74 @@
+CLASS Game
+    VAR game_board OF TYPE Board
+    VAR player_one OF TYPE Player
+    VAR player_two OF TYPE Player
+    VAR Board_Display OF TYPE JPanel (or of custom board displaying class to be written later)
+
+    CONSTRUCTOR()
+    METHOD newGame()
+    METHOD setBoard()
+    METHOD setWhitePlayer()
+    METHOD setBlackPlayer()
+    METHOD getBoard()
+    METHOD getWhitePlayer()
+    METHOD getBlackPlayer()
+
+CLASS Board
+    VAR board_spot_array OF TYPE Spot[8][8]
+    VAR white_board_value OF TYPE int
+    VAR black_board_value OF TYPE int
+
+    CONSTRUCTOR()
+    METHOD setWhiteValue()
+    METHOD setBlackValue()
+    METHOD getWhiteValue()
+    METHOD getBlackValue()
+
+    METHOD printBoard()
+
+
+CLASS Spot
+    VAR x OF TYPE int
+    VAR y OF TYPE int
+    VAR piece OF TYPE Piece
+
+    CONSTRUCTOR()
+
+    METHOD getX()
+    METHOD getY()
+    METHOD setX()
+    METHOD setY()
+    METHOD getPiece()
+    METHOD setPiece()
+
+ABSTRACT CLASS Player
+    VAR is_human OF TYPE boolean
+    VAR team OF TYPE boolean
+
+
+    ABSTRACT METHOD makeMove()
+    METHOD isHuman()
+    METHOD getTeam()
+    Method setTeam()
+
+
+CLASS Human_Player
+
+    CONSTRUCTOR()
+    METHOD nextMove()
+
+CLASS Computer_Player
+
+    CONSTRUCTOR()
+    METHOD nextMove()
+
+ABSTRACT CLASS Piece
+    VAR team OF TYPE boolean
+
+    CONSTRUCTOR()
+
+    ABSTRACT METHOD getMoves()
+    ABSTRACT METHOD isLegal()
+
+    METHOD getTeam()
+    METHOD setTeam()

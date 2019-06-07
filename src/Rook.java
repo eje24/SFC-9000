@@ -49,9 +49,9 @@ public class Rook extends Piece {
     public double getValue() {return 50;}
     public ImageIcon getImageIcon(){
         if(this.getTeam())
-            return new ImageIcon("/Users/Ezra/IdeaProjects/Super Fantastic Chess 9000/src/images/whiteRook.png");
+            return new ImageIcon("./src/images/whiteRook.png");
         else
-            return new ImageIcon("/Users/Ezra/IdeaProjects/Super Fantastic Chess 9000/src/images/blackRook.png");
+            return new ImageIcon("./src/images/blackRook.png");
     }
     public int getEvalID(){
         return 2;

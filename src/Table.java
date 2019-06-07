@@ -64,7 +64,7 @@ public class Table {
         toolBar.add(quitButton);
         table.add(toolBar,BorderLayout.PAGE_START);
         table.add(board);
-        announcementLabel=new JLabel();
+        announcementLabel=new JLabel("Select Game Mode!");
         toolBar.addSeparator();
         toolBar.add(announcementLabel);
         table.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
