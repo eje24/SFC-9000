@@ -54,9 +54,9 @@ public class Pawn extends Piece {
     public double getValue(){ return 10;}
     public ImageIcon getImageIcon(){
         if(this.getTeam())
-            return new ImageIcon("/Users/Ezra/IdeaProjects/Super Fantastic Chess 9000/src/images/whitePawn.png");
+            return new ImageIcon("./src/images/whitePawn.png");
         else
-            return new ImageIcon("/Users/Ezra/IdeaProjects/Super Fantastic Chess 9000/src/images/blackPawn.png");
+            return new ImageIcon("./src/images/blackPawn.png");
     }
     public int getEvalID(){
         return 5;

@@ -53,9 +53,9 @@ public class Queen extends Piece {
     public double getValue(){ return 90;}
     public ImageIcon getImageIcon(){
         if(this.getTeam())
-            return new ImageIcon("/Users/Ezra/IdeaProjects/Super Fantastic Chess 9000/src/images/whiteQueen.png");
+            return new ImageIcon("./src/images/whiteQueen.png");
         else
-            return new ImageIcon("/Users/Ezra/IdeaProjects/Super Fantastic Chess 9000/src/images/blackQueen.png");
+            return new ImageIcon("./src/images/blackQueen.png");
     }
     public int getEvalID(){
         return 1;
